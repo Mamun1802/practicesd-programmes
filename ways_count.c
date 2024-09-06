@@ -3,7 +3,7 @@
 
 
 int main(){
-    int count=1,n,quotient;
+    int n,quotient,result;
 
     //Input number of stairs
     printf("Enter the number of stairs:");
@@ -11,13 +11,12 @@ int main(){
 
     quotient=n/2;
 
-    //loop runs to count the total way
-    for(int i=quotient;i>=1;i--){
-    count=count+1;
-    }
+   //Count the total ways
+   result=quotient+1;
+
 
    //Print the number of ways
-   printf("Number of ways to reach top is = %d",count);
+   printf("Number of ways to reach top is = %d",result);
 
    return 0;
 
